@@ -44,7 +44,7 @@ a {
 }
 i{
     vertical-align: middle;
-	padding-right: 10px;
+	padding-right: 5px;
 
 }
 p{
@@ -55,11 +55,15 @@ p{
 
 ul {
     list-style-type: none;
+    vertical-align: middle;
+	padding-right: 5px;
+
 }
 
 ol {
     padding-left: 50px;
     padding-top: 5px;
+    
 }
 
 .pad {
