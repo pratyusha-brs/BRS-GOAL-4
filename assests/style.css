@@ -15,21 +15,19 @@
 }
 
 aside {
-grid-area: aside;
+
 width:300px;
  float : left; 
- padding-left: 1em;   
-}
-
+ padding-left: 1em;
+ flex: 0 0 24%;
+}   
 
 .body-content {
    width:60%;
     float: right;
-    grid-area: body-content;
-
-    
-    
-}
+    flex: 0 0 70%;
+    margin-left: auto;
+  }
 /*
 .int {
     border: 10px;
@@ -66,26 +64,11 @@ ol {
     
 }
 
-.pad {
-    padding-bottom: 10px;
-}
-
-.mainpad {
-    padding-bottom: 25px;
-}
-
 /* Wrapper */
 
  #wrapper {  
-    display: grid;
-    grid-template-columns:1fr;
-    /* 2-column grid */
-    grid-template-rows: 1fr ;
-    /* 2-row grid */
-    grid-template-areas:
-        "aside main";
-    grid-gap: 20px;
-    /* gap between the columns */
+    display: flex;
+    flex-wrap: wrap;
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
     box-shadow : 0 2px 4px 0 rgba(0, 0, 0, .08);
@@ -153,7 +136,7 @@ article {
 }
 
 
-
+/*
 .int {
     margin-top: 30px;
     display: flex;
@@ -168,6 +151,7 @@ article {
     padding-left: 300px;
     padding-top: 0;
 }
+/*
 /* Material Icons*/
 .size {
     padding: 30px;
@@ -247,12 +231,7 @@ article {
     }
 
     #wrapper {
-      
         padding: 20px;
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-            "aside"
-            "main";
         grid-gap: 10px
     }
 
